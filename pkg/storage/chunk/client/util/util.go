@@ -67,6 +67,7 @@ func DoParallelQueries(
 
 // EnsureDirectory makes sure directory is there, if not creates it if not
 func EnsureDirectory(dir string) error {
+	fmt.Printf("EnsureDirectory dir = %v", dir)
 	info, err := os.Stat(dir)
 	if os.IsNotExist(err) {
 		return os.MkdirAll(dir, 0o777)
