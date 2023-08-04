@@ -13,7 +13,7 @@ buildGoModule rec {
   version = "2.8.3";
   pname = "grafana-loki";
 
-  src = flakeInputs.loki;
+  src = flakeInputs.custom-grafana-loki;
 
   vendorHash = null;
 
